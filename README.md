@@ -50,6 +50,47 @@ In our case the relevant columns here are namely: 'Make', 'Model', 'Injury.Sever
 
 Now we find the total sum of missing values in the <relevant_columns>. After we find the sum of missing values, we can execute two operations namely; fill in missing values and or drop missing values.
 
+## Fill in the missing data
+
+Identify columns with continuous data and fill the missing values with the median. Find the continuous data types using
+df.info()
+The continuous data columns are: 'Number.of.Engines', 'Total.Fatal.Injuries', 'Total.Serious.Injuries', 'Total.Minor.Injuries', 'Total.Uninjured'
+Fill the continuous data columns  their median using .fillna(medians)
+Check for missing values in the rows of the remaining columns
+Drop missing data from the remaining columns
+Check if there are any remaining missing values
+
+## Implement changes to the file
+
+Save the changes onto the CSV file and create a copy of the file that will be used for creating visualizations.
+Upload changes onto the csv using df.to_csv('Cleaned_Aviation_Data.csv',index = False) 
+Create a copy of the clean dataset using df.copy()
+
+# 4. MODELLING
+
+Now that our data is ready we can proceed to create visual models that will help in evaluation. Here we make use of visual python libraries called Matplotlib and Seaborn which are essential for creating visual analysis. Here we will look for any aspect of correlation between the remaining variables and see if there is any correlation and to what extent the correlation occurs.
+
+### Import the relevant libraries
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+## Use the following visualizations
+
+Plot a time series of the number of accidents over time 
+
+Plot the bar chart for the top 15 Aircraft type with the most accident occurrences
+
+Plot the bar chart for the bottom 15 Aircraft type with the least accident occurrences
+
+Plot combined bar graph showing relationship between Aircraft types and severity of injuries after accident.
+
+Plot heatmap that shows the relationship between aircraft damage and purpose of flight
+
+
+
+
+
+
 
 
 
