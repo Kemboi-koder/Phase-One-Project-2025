@@ -66,7 +66,7 @@ Save the changes onto the CSV file and create a copy of the file that will be us
 Upload changes onto the csv using df.to_csv('Cleaned_Aviation_Data.csv',index = False) 
 Create a copy of the clean dataset using df.copy()
 
-# 4. MODELLING
+# 3. MODELLING
 
 Now that our data is ready we can proceed to create visual models that will help in evaluation. Here we make use of visual python libraries called Matplotlib and Seaborn which are essential for creating visual analysis. Here we will look for any aspect of correlation between the remaining variables and see if there is any correlation and to what extent the correlation occurs.
 
